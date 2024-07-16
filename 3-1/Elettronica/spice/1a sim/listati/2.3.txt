@@ -1,0 +1,27 @@
+* C:\Users\ferra\OneDrive\Desktop\Appunti\3-1\Elettronica\spice\1a simulazione\schematici\es2.asc
+* ------------------------------------------------------
+* componenti del circuito
+* ------------------------------------------------------
+R2 N002 N001 20.00156
+* opamp "ideale": guadagno di 100K e prodotto
+* guadagno-larghezza di banda di 10M
+XU1 N002 N004 N003 opamp Aol=100K GBW=10Meg
+R1 N004 N001 20.00156
+R3 0 N004 1k
+R4 N003 N002 {(1+delta)*1k}
+* valore della tensione di Vref non specificato:
+* non serve per la nostra analisi
+Vref N001 0 V
+* ------------------------------------------------------
+* istruzioni varie
+* ------------------------------------------------------
+* definiamo il parametro delta: andiamo a modificarlo
+* linearmente: da 100 a 1000 con incrementi di 100
+.step param delta 100 1000 100
+* analisi DC sweep: variamo linearmente Vref da 1V a
+* 2V, con incrementi da 0.1V
+.dc Vref 1 2 0.1
+* importiamo il modello di opamp ideale
+.lib opamp.sub
+.backanno
+.end

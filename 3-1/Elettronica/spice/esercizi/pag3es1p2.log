@@ -1,0 +1,10 @@
+Circuit: * C:\Users\ferra\OneDrive\Desktop\Appunti\3-1\Elettronica\spice\esercizi\pag3es1p2.asc
+
+Error on line 4 : r2 n002 0 (100/9)k
+	 Unknown parameter "/9"
+Error on line 14 : .tf out v1
+	Syntax error: voltage or current expected.
+Direct Newton iteration for .op point succeeded.
+Ignoring empty pin current: Ix(x1:inn)
+Ignoring empty pin current: Ix(x1:inp)
+Fatal Error: Transfer function source (null) not in circuit

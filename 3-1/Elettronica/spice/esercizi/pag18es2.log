@@ -1,0 +1,20 @@
+Circuit: * C:\Users\ferra\OneDrive\Desktop\Appunti\3-1\Elettronica\spice\esercizi\pag18es2.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Tue Jan 17 10:52:20 2023
+Total elapsed time: 0.043 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 3
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 3
+fillins = 0
+solver = Normal
+Matrix Compiler1: 32 bytes object code size
+Matrix Compiler2: 121 bytes object code size

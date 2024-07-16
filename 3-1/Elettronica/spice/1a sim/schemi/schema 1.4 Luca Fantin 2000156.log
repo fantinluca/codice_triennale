@@ -1,0 +1,20 @@
+Circuit: * C:\Users\ferra\OneDrive\Desktop\1a sim\schemi\schema 1.4 Luca Fantin 2000156.asc
+
+Ignoring empty pin current: Ix(u1:1)
+Ignoring empty pin current: Ix(u1:2)
+
+Date: Mon Dec 05 18:43:19 2022
+Total elapsed time: 0.047 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 0
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 5
+fillins = 1
+solver = Normal
+

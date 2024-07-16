@@ -1,0 +1,16 @@
+# data in AMPL format
+
+set Porte := standard lusso ;
+set Fasi := assemblaggio verniciatura ;
+
+param Ore :=
+standard assemblaggio 2
+standard verniciatura 3
+lusso assemblaggio 4
+lusso verniciatura 5
+;
+
+param Ub :=  standard 500 lusso 300 ;
+param Ricavo :=  standard 300 lusso 400 ;
+param Operai :=  assemblaggio 20 verniciatura 30 ;
+param OreSettimana := 40 ;

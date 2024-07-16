@@ -1,0 +1,31 @@
+Comando PING: manda pacchetti a destinazione, destinazione risponde con pacchetti grandi uguali
+Misurato e visualizzato ROUND-TRIP TIME: tempo tra invio richiesta e arrivo risposta
+
+Specifichiamo pacchetti di dimensione L [bit]
+Eseguiamo ping K volte
+RTT(k,L): RTT alla k-esima esecuzione di ping con pacchetti grandi L
+
+RTT(k,L): somma di ritardi su ogni link
+Tempo per attraversare ogni link è somma di:
+- tempo speso in buffer di trasmissione di link => q_i(k)
+- tempo speso da algoritmi di routing per scegliere instradamento => difficile da modellare, trascurabile
+- tempo propagazione segnale => tau_i (costante per link)
+- durata segnale di pacchetto => L/S_i: dipende da L e troughput di link a livello rete
+
+Link su percorso andata e ritorno numerati [1,n]
+Su somma che fa RTT(k,L) chiamiamo:
+- a = somma di 1/S_i
+- Q(k) = somma di q_i(k)
+- T = somma di tau_i
+
+Per eliminare dipendenza da buffer (Q(k)), consideriamo RTT minimo tra serie di misurazione di trasmissioni
+di pacchetti grandi uguali
+Così, più o meno andamento retta => si può ottenere così stima a
+Con a, possiamo stimare throughput:
+- se link hanno tutti throughput uguale: a=n/S => S=n/a
+- se c'è link con throughput molto minore degli altri (bottleneck): a=2/S_{bottleneck} (circa) =>
+S_bottleneck=2/a
+
+Altro:
+- TIME TO LIVE (TTL): numero massimo di link che pacchetto può attraversare prima di essere scartato =>
+=> se viene scartato, ritornato errore

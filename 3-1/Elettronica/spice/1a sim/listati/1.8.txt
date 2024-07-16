@@ -1,0 +1,13 @@
+* C:\Users\ferra\OneDrive\Desktop\1a sim\schemi\1.8.asc
+VIN N001 0 19.98mV DC 0 AC 1 sin(0 19.98mV 1kHz 0 0 0)
+C2 N002 N001 100n
+R2 N002 0 200015.6
+R3 N004 0 100
+R4 N003 N004 100k
+XU1 N002 N004 +Vcc -Vcc N003 LT1028
+V1 +Vcc 0 +10V
+V2 -Vcc 0 -10V
+.tran 0 3m 0 1u uic
+.lib LTC.lib
+.backanno
+.end

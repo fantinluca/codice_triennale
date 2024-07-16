@@ -1,0 +1,3 @@
+- K numero pacchetti => in ping, "-n count"; in psping, "-n count"
+- L_byte dimensione => in ping, "-l size"; in psping, "-l requestsize"
+- TTL => in ping, "-i TTL"; in psping, boh

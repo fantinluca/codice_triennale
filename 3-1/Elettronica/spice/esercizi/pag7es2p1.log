@@ -1,0 +1,4 @@
+Circuit: * C:\Users\ferra\OneDrive\Desktop\Appunti\3-1\Elettronica\spice\esercizi\pag7es2p1.asc
+
+Fatal Error: Unknown subcircuit called in:
+   xu1 n002 n005 n003 opamp aol=100k gbw=10meg

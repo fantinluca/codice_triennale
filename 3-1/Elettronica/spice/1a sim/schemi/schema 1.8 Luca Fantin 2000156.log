@@ -1,0 +1,4 @@
+Circuit: * C:\Users\ferra\OneDrive\Desktop\1a sim\schemi\schema 1.8 Luca Fantin 2000156.asc
+
+Fatal Error: Unknown subcircuit called in:
+   xu1 n002 n004 +vcc -vcc n003 opamp2

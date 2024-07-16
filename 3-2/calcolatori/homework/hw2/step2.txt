@@ -1,0 +1,4 @@
+- TTL: cercare valore in [0,255] con simil ricerca binaria: andare a metà intervallo, eseguire,
+cercare a sinistra/destra/fermarsi a seconda di risultato
+- dimensione: [10,1000] a passi di 50 o 100
+- K: 25

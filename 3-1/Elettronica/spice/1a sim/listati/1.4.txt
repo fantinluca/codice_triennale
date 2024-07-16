@@ -1,0 +1,25 @@
+* C:\Users\ferra\OneDrive\Desktop\Appunti\3-1\Elettronica\spice\1a simulazione\es1p1.asc
+* ------------------------------------------------------
+* componenti del circuito
+* ------------------------------------------------------
+* generatore di tensione: va a massa, 0V in DC,
+* segnale sinusoidale in AC: ampiezza di 100mV,
+* frequenza di 10 kHz, no ritardo o fase iniziale
+V1 N001 0 100mV DC 0 AC 1 sin(0 100mV 10kHz 0 0 0)
+C2 N002 N001 100n
+R2 N002 0 200015.6
+* opamp "ideale": guadagno di 100K e prodotto
+* guadagno-larghezza di banda di 10M
+XU1 N002 N004 N003 opamp Aol=100K GBW=10Meg
+R3 N004 0 100
+R4 N003 N004 100k
+* ------------------------------------------------------
+* istruzioni varie
+* ------------------------------------------------------
+* analisi in frequenza del circuito, per le frequenze
+* da 1Hz a 1MHz, 10 punti per decade
+.ac dec 10 1 1MEG
+* istruzione per importare sottocircuito dell'opamp
+.lib opamp.sub
+.backanno
+.end

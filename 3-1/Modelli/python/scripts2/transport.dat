@@ -1,0 +1,16 @@
+# data in AMPL format
+
+set Sorgenti := A B ;
+set Destinazioni := 1 2 3 ;
+
+param Costo :=
+A 1 2.5
+A 2 1.7
+A 3 1.8
+B 1 2.5
+B 2 1.8
+B 3 1.4
+;
+
+param Produzione :=  A 350 B 600 ;
+param Domanda :=  1 325 2 300 3 275 ;

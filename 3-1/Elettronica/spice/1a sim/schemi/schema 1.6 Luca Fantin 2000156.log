@@ -1,0 +1,21 @@
+Circuit: * C:\Users\ferra\OneDrive\Desktop\1a sim\schemi\schema 1.6 Luca Fantin 2000156.asc
+
+Per .tran options, skipping operating point for transient analysis.
+
+Date: Fri Dec 02 20:04:53 2022
+Total elapsed time: 0.200 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 6117
+traniter = 6117
+tranpoints = 3059
+accept = 3058
+rejected = 1
+matrix size = 16
+fillins = 9
+solver = Normal
+Matrix Compiler1: 982 bytes object code size  0.4/0.2/[0.2]
+Matrix Compiler2: 1.48 KB object code size  0.2/0.3/[0.2]
+
